@@ -6,3 +6,49 @@
     --pink-light: #FFDDDD;
     --pink-dark: #D49C9C;
 }
+
+body {
+    margin: 0;
+    padding: 2rem 2.5rem;
+    background-color: var(--bkg-clr);
+    user-select: none;
+
+    font-family: 'Inter';
+    color: var(--pink-light);
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+
+    &.jc-sb {
+        justify-content: space-between;
+    }
+
+    &.jc-fe {
+        justify-content: flex-end;
+    }
+}
+
+header {
+    font-weight: bold;
+
+    & nav {
+        gap: 1.2rem;
+        font-weight: lighter;
+    }
+}
+
+footer {
+    & .social {
+        gap: 0.8rem;
+
+        & img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
