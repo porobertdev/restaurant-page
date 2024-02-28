@@ -10,7 +10,7 @@ const content = document.querySelector('#content');
 // load homepage
 content.innerHTML = Home();
 
-const tabs = document.querySelectorAll('li');
+const tabs = document.querySelectorAll('nav > button');
 
 for (const tab of tabs) {
     tab.addEventListener('click', clickHandler);
