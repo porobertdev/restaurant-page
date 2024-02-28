@@ -3,6 +3,7 @@
 @import './css/home.css';
 @import './css/menu.css';
 @import './css/contact.css';
+@import './css/about.css';
 
 :root {
     --bkg-clr: #2F293D;
