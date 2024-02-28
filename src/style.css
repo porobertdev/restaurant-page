@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @import './css/home.css';
+@import './css/menu.css';
 
 :root {
     --bkg-clr: #2F293D;
