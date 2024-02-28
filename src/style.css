@@ -2,6 +2,7 @@
 
 @import './css/home.css';
 @import './css/menu.css';
+@import './css/contact.css';
 
 :root {
     --bkg-clr: #2F293D;
@@ -24,9 +25,26 @@ li {
     list-style: none;
 }
 
-button {
+button,
+input,
+textarea {
     appearance: none;
     border: none;
+    outline: none;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 9px;
+    background-color: var(--pink);
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--pink);
 }
 
 .flex {

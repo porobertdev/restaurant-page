@@ -20,14 +20,5 @@
         & span {
             color: var(--pink);
         }
-
-        & button {
-            margin-top: 1rem;
-            padding: 0.7rem 1.5rem;
-            border-radius: 9px;
-            background-color: var(--pink);
-            color: white;
-            font-weight: bold;
-        }
     }
 }
