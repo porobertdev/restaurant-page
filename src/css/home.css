@@ -1,0 +1,33 @@
+#content.home {
+    gap: 8rem;
+
+    & img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    & .welcome {
+        align-self: center;
+
+        & h1 {
+            font-size: 3rem;
+
+            & p {
+                margin: 0;
+            }
+        }
+
+        & span {
+            color: var(--pink);
+        }
+
+        & button {
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: 9px;
+            background-color: var(--pink);
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
