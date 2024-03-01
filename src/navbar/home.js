@@ -15,7 +15,7 @@ export default function Home() {
         </div>
     `;
 
-    content.classList.add('home', 'flex');
+    content.classList.add('home');
 
     return html;
 };

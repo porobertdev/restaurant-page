@@ -12,6 +12,17 @@
     --pink-dark: #D49C9C;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body,
+header,
+nav,
+.social {
+    display: flex;
+}
+
 body {
     margin: 0;
     padding: 1rem;
@@ -20,6 +31,8 @@ body {
 
     font-family: 'Inter';
     color: var(--pink-light);
+
+    flex-direction: column;
 }
 
 button,
@@ -34,19 +47,8 @@ button {
     cursor: pointer;
 }
 
-.flex {
-    display: flex;
-
-    &.jc-sb {
-        justify-content: space-between;
-    }
-
-    &.jc-fe {
-        justify-content: flex-end;
-    }
-}
-
 header {
+    justify-content: space-between;
     font-weight: bold;
 
     & .logo {
@@ -70,7 +72,9 @@ header {
 }
 
 footer {
+
     & .social {
+        justify-content: flex-end;
         gap: 0.8rem;
 
         & img {
@@ -81,6 +85,8 @@ footer {
 }
 
 #content {
+    display: flex;
+
     padding: 2rem 0;
 
     & button {
@@ -103,12 +109,60 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    #content {
-        display: block;
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0;
     }
 
-    #content.contact > form {
+    nav {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 10%;
+        align-self: center;
+    }
+    
+    #content.home {
+        flex-direction: column;
+        gap: 1rem;
+
+        padding: 2rem;
+        margin: 0 auto;
+
+        & img {
+            width: 20rem;
+        }
+
+        & .welcome {
+            display: flex;
+            flex-direction: column;
+            
+            & h1 {
+                font-size: 2.5rem;
+            }
+            
+        }
+
+    }
+
+    #content.contact {
         width: 70%;
-        margin: 7rem auto;
+
+        & form {
+            gap: 1.6rem;
+
+            & input {
+                padding: 1rem;
+            }
+        }
+    }
+
+    #content.contact,
+    #content.about {
+        margin-bottom: 3rem;
     }
 }
