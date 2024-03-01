@@ -14,7 +14,7 @@
 
 body {
     margin: 0;
-    padding: 2rem 2.5rem;
+    padding: 1rem;
     background-color: var(--bkg-clr);
     user-select: none;
 
@@ -48,6 +48,10 @@ button {
 
 header {
     font-weight: bold;
+
+    & .logo {
+        width: 10rem;
+    }
 
     & nav {
         gap: 1.2rem;
@@ -92,4 +96,8 @@ footer {
         background-color: white;
         color: var(--pink);
     }
+}
+
+#content.home {
+    margin: 0 1rem;
 }
