@@ -1,5 +1,6 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const copyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -30,6 +31,11 @@ module.exports = {
             title: 'Restaurant Page',
             inject: 'head',
             scriptLoading: 'defer'
+        }),
+        new copyWebpackPlugin({
+            patterns: [
+                {from: 'src/assets', to: 'assets'}
+            ]
         })
     ]
 };
