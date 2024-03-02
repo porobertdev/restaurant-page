@@ -1,19 +1,16 @@
-export default function Menu() {
+import meals from '../data/meals.json';
 
-    const images = {
-        'ramen.jpg': 7.99,
-        'soba.jpg': 3.99,
-        'udon.jpg': 4.99,
-        'yobisoba.jpg': 8.99
-    };
+console.log(meals);
+
+export default function Menu() {
 
     let html = '';
 
-    for (let image of Object.keys(images)) {
+    for (let meal of meals) {
         html += `
             <div class="dish">
-                <img src="./assets/img/${image}">
-                <span class="price">$${images[image]}</span>
+                <img src="./assets/img/${meal.name}">
+                <span class="price">$${meal.price}</span>
             </div>
         `;
     }
