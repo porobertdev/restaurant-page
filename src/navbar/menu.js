@@ -1,7 +1,5 @@
 import meals from '../data/meals.json';
 
-console.log(meals);
-
 export default function Menu() {
 
     let html = '';
